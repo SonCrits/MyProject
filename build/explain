@@ -1,0 +1,85 @@
+Mục tiêu
+    sử dụng thunk, logger, server API
+    Các chức năng
+        Trang danh sách nhân viên
+            Chế độ xem theo cột
+            Sắp xếp theo Id
+            Sắp xếp theo Phòng Ban
+            Thông tin chi tiết nhân viên
+            Xóa NHân Viên
+            Sửa nhân viên 
+            Thêm nhân viên
+            Tìm kiếm nhân viên
+        Trang Phòng Ban
+            Thông tin PHòng ban 
+                Số lượng nhân viên
+                Danh sách nhân viên trong phòng
+        Trang bảng Lương
+            Sắp xếp theo Id
+            Sắp xếp theo lương
+
+
+Hướng dẫn
+    Redux
+        ActionTypes
+            Render_Staff
+            Add_department
+            Add_staff
+            update_staff
+            delete_staff
+            get_salary
+        ActionCreator
+            thunk_fetchStaffs
+            action_renderStaffs
+            thunk_postStaff
+            action_addStaffs
+            thunk_fetchDelStaffs
+            action_delStaffs
+            thunk_fetchUpdateStaff
+            action_updateStaff
+            thunk_fetchDepartment
+            action_addDepartments
+            thunk_fetchSalary
+            action_getSalaryStaff
+            Count ???????????????????????
+        CountReducer ??????????????????????
+        baseUrl
+        configureStore
+        departmentReducer
+            case add_department
+        salary
+            case get_salary
+        staffsReducer
+            case Render_Staff
+            case Add_staff
+            case delete_staff
+            case update_staff
+    React
+        Department
+            DepartmentComponent.js
+                const deptName = (id) => switch/ case
+                function Department
+                    return map department
+            DepartmentStaff.js
+                function DepartmentStaff
+                    tham số staff, departments, fetchDelStaffs, fetchUpdateStaff
+                    let deptArr = departments.filter. dept.id = staff.departmentId
+                    let deptRename = deptArr[0].id
+                    return StaffList 
+        Layout
+            FooterComponent.js
+            HeaderComponent.js
+        Salary
+            SalaryComponent.js
+        Staff
+            Form
+                Staff_Form_Add.js
+                Staff_Form_Update.js
+            Staff_Detail 
+                DepartmentName.js 
+                Staff_delete_ConForm_Popover.js 
+                Staff_Detail_Modal.js
+                Staff_Detail_PopOver.js
+                Staff_Detail_Tooltip.js
+            StaffComponent.js
+            Staff_List.js 
