@@ -1,0 +1,54 @@
+<odoo>
+	<template id='course'>
+		<t t-call='website.layout'>
+			<div class="container">
+			   <div class="row">
+			      <t t-foreach="courses" t-as="course">
+			         <div class="col-sm-4">
+			            <div class="card m-3" style="width: 20rem;">
+			               <span 
+				               	t-field="course.image" 
+				               	t-options="{
+							         'widget': 'image',
+							         'class': 'card-img-top'}"
+         					/>
+			               <div class="card-body" id="card_body">
+			                  <h3 t-field = "course.name" class="card-title"/>
+				               <div class = "mt-1" id="tags">
+				                  <p t-field = "course.type_of_course" class="badge bg-danger"/>
+				                  <p t-field = "course.level_of_course" class="badge badge-success"/>
+				               </div>
+			                  <p class="card-text">With <t t-esc = "course.number_of_lesson" /> lessons</p>
+			                  <a t-attf-href="/course/#{course.id}" class="btn btn-primary">Start learning</a>
+			               </div>
+			            </div>
+			         </div>
+			      </t>
+			   </div>
+			</div>
+		</t>
+	</template>
+	
+	<template id="course_detail" name="Courses Detail">
+	   <t t-call="website.layout">
+	      <t t-foreach="courses" t-as="course">
+	         <section class="pt32 pb32 bg-secondary oe_custom_bg">
+	            <div class="container text-center">
+	               <h1><t t-esc = "course.name"/></h1>
+	               <a href="#" class="btn btn-primary mt-1"
+	                  style="box-shadow: 2px 2px 0px 0px rgba(255,255,255,1);
+	                  width: 5rem;">
+	                   Start
+	               </a>
+	            </div>
+	         </section>
+	         <div class="container mt-3">
+	            <div class="text-center">
+	               <h2><b>Overview</b></h2>
+	            </div>
+	            <div t-field="course.html_description"/>
+	         </div>
+	      </t>
+	   </t>
+	</template>
+</odoo>
