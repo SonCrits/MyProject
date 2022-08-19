@@ -1,0 +1,8 @@
+<odoo>
+   <template id="course_snippets_options" inherit_id="website.snippets">
+      <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+         <t t-snippet="education.s_course_lessons" t-thumbnail="/education/static/src/img/icon.webp"/>
+         <t t-snippet="education.s_course_carousel" t-thumbnail="/education/static/src/img/ranking.jpg"/>
+      </xpath>
+   </template>
+</odoo>

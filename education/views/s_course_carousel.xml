@@ -1,0 +1,25 @@
+<odoo>
+   <template id="s_course_carousel" name="Course Carousel">
+      <section class="pt-3 pb-3 s_course_carousel">
+         <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img id = "img_carosouel-1"
+                     src="https://image.freepik.com/free-photo/coding-man_1098-18084.jpg"
+                     class="d-block w-100"/>
+               </div>
+               <div class="carousel-item">
+                  <img id = "img_carosouel-2"
+                     src="https://image.freepik.com/free-photo/coding-man_1098-18084.jpg"
+                     class="d-block w-100"/>
+               </div>
+               <div class="carousel-item">
+                  <img id = "img_carosouel-3"
+                     src="https://image.freepik.com/free-photo/coding-man_1098-18084.jpg"
+                     class="d-block w-100"/>
+               </div>
+            </div>
+         </div>
+      </section>
+   </template>
+</odoo>

@@ -1,0 +1,17 @@
+<odoo>
+	<template id="s_course_lessons" name="Course Lessons">
+	   <section class="pt-3 pb-3">
+	      <div class="container">
+	         <div class="media">
+	            <img class="mr-3" src="education/static/src/img/static-snippets.png" alt="Generic placeholder image"/>
+	            <div class="media-body">
+	               <h5 class="mt-0">Lesson</h5>
+	               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+	               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	               when an unknown printer took a galley of type and scrambled it to make a type specimen book. sum.
+	            </div>
+	         </div>
+	      </div>
+	   </section>
+	</template>
+</odoo>
