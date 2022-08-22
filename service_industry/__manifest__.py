@@ -1,13 +1,13 @@
 {
-    'name': "karaoke manager",
-    'name_vi_VN': "Quản lý quán karaoke",
+    'name': "Service Industry",
+    'name_vi_VN': "Lĩnh Vực Dịch Vụ",
 
     'summary': """
-Karaoke Manager
+Module base của lĩnh vực công nghệ không khói
 """,
 
     'summary_vi_VN': """
-Quản lý quán karaoke
+Module base của lĩnh vực công nghệ không khói
 """,
 
     'description': """
@@ -46,7 +46,7 @@ Tính năng chính
 
     'category': 'Project/FSM',
     'version': '0.1.1',
-    'depends': ['service_industry'],
+    'depends': ['base'],
     'data': [],
     'images' : [],
     'installable': True,
