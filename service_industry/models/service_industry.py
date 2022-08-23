@@ -11,7 +11,8 @@ class ServiceIndustry(models.AbstractModel):
     currency_id = fields.Many2one('res.currency', string='Journal Currency')
     spending_expenses = fields.Float(string='Spending Expenses', default='2000')
     total_revenue = fields.Float(string='Total Revenue', compute='_compute_total_revenue')
-
+    
+    #hàm thuần ảo, có thể tính dk nhiều kiểu tiền dịch vụ
     def compute_interest_rate(self, costs_incurred):
         interest_rate = self.total_revenue - self.spending_expenses - costs_incurred      
         return  interest_rate

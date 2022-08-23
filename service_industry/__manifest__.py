@@ -8,6 +8,11 @@ Module base của lĩnh vực công nghệ không khói
 
     'summary_vi_VN': """
 Module base của lĩnh vực công nghệ không khói
+đây là class services trừu tượng và hàm thuần ảo compute_interest_rate
+sẽ có thể được dẫn xuất từ nhiều class khác
+ví dụ karaoke có tính phí nhân viên và tiền bảo dưỡng đồ đạc thiết bị
+quán ăn có tính phí khấu hao đồ ăn đồ uống..
+
 """,
 
     'description': """

@@ -8,6 +8,9 @@ Karaoke Manager
 
     'summary_vi_VN': """
 Quản lý quán karaoke
+hàm thuần ảo karaoke contructor. kế thừa hàm _compute_total_revenue của service
+hàm compute_interest_rate ở service industry sẽ được kế thừa ở 2 class dẫn xuất của karaoke
+mỗi con sẽ tính 1 kiểu 
 """,
 
     'description': """

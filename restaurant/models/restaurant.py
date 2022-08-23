@@ -52,6 +52,3 @@ class RestaurantVip(models.Model):
         employee_salary = self.__get_employee_price()
         #employee_salary = self.super(RestaurantVip, self.__get_employee_price())
         employee_salary.action_pay_sip()
-        
-    
-    
