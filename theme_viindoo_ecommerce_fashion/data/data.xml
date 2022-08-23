@@ -1,0 +1,19 @@
+<odoo>
+	<function name="write" model="ir.model.data">
+		<function name="search" model="ir.model.data">
+			<value
+				eval="[('module', '=', 'website'), ('name', '=', 'menu_shop')]" />
+		</function>
+		<value eval="{'noupdate': False}" />
+	</function>
+	<record id="website_sale.menu_shop" model="website.menu">
+		<field name="name">Ecommerce</field>
+	</record>
+	<function name="write" model="ir.model.data">
+		<function name="search" model="ir.model.data">
+			<value
+				eval="[('module', '=', 'website'), ('name', '=', 'menu_shop')]" />
+		</function>
+		<value eval="{'noupdate': True}" />
+	</function>
+</odoo>

@@ -14,6 +14,11 @@ class KaraokeRoom(models.Model):
     employee_ids = fields.One2many('res.users', 'karaoke_room_id', string='Employee')
     employee_price = fields.Monetary(string='Employee Price')
     employee_sum_price = fields.Monetary(string='Employee Sum price', compute='_compute_sum_employee_price')
+    state = fields.Selection(selection=[
+        ('ready', 'Ready'),
+        ('busy', 'Busy'),
+        ('waiting', 'Waiting')
+    ],string='Status', default='ready')
     
     @api.depends('price', 'start_time', 'stop_time')
     def _compute_price(self):
